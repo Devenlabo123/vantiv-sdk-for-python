@@ -365,13 +365,22 @@ class cardType (pyxb.binding.basis.complexTypeDefinition):
     
     pin = property(__pin.value, __pin.set, None, None)
 
+
+    #Element {http://vantivcnp.com/schema}tokenURL uses Python identifier tokenURL
+    _tokenURL = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'tokenURL'), 'tokenURL', ' _httpwww_vantivcnp_comschema_cardType_httpwww_vantivcnp_comschematokenURL', False, pyxb.utils.utility.Location('SchemaCombined_v12.8.xsd', 98, 12), )
+
+
+    tokenURL = property(_tokenURL.value, _tokenURL.set, None, None)
+
+
     _ElementMap.update({
         __type.name() : __type,
         __number.name() : __number,
         __expDate.name() : __expDate,
         __track.name() : __track,
         __cardValidationNum.name() : __cardValidationNum,
-        __pin.name() : __pin
+        __pin.name() : __pin,
+        _tokenURL.name() : _tokenURL
     })
     _AttributeMap.update({
         

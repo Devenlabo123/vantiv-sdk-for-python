@@ -67,7 +67,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 }
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('000', response['authorizationResponse']['response'])
         self.assertEquals('Approved', response['authorizationResponse']['message'])
@@ -83,6 +84,7 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
         conf.proxy=''
+        conf.save()
         captureresponse = online.request(txn_dict, conf)
         self.assertEquals('000', captureresponse['captureResponse']['response'])
         self.assertEquals('Approved', captureresponse['captureResponse']['message'])
@@ -94,7 +96,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         creditresponse = online.request(txn_dict, conf)
         self.assertEquals('000', creditresponse['creditResponse']['response'])
         self.assertEquals('Approved', creditresponse['creditResponse']['message'])
@@ -106,7 +109,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         voidresponse = online.request(txn_dict, conf)
         self.assertEquals('000', voidresponse['voidResponse']['response'])
         self.assertEquals('Approved', voidresponse['voidResponse']['message'])
@@ -135,7 +139,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('000', response['authorizationResponse']['response'])
         self.assertEquals('Approved', response['authorizationResponse']['message'])
@@ -167,7 +172,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('000', response['saleResponse']['response'])
         self.assertEquals('Approved', response['saleResponse']['message'])
@@ -182,7 +188,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         creditresponse = online.request(txn_dict, conf)
         self.assertEquals('000', creditresponse['creditResponse']['response'])
         self.assertEquals('Approved', creditresponse['creditResponse']['message'])
@@ -194,7 +201,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         voidresponse = online.request(txn_dict, conf)
         self.assertEquals('000', voidresponse['voidResponse']['response'])
         self.assertEquals('Approved', voidresponse['voidResponse']['message'])
@@ -228,7 +236,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('000', response['authorizationResponse']['response'])
         self.assertEquals('Approved', response['authorizationResponse']['message'])
@@ -244,7 +253,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         captureresponse = online.request(txn_dict, conf)
         self.assertEquals('000', captureresponse['captureResponse']['response'])
         self.assertEquals('Approved', captureresponse['captureResponse']['message'])
@@ -256,7 +266,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         creditresponse = online.request(txn_dict, conf)
         self.assertEquals('000', creditresponse['creditResponse']['response'])
         self.assertEquals('Approved', creditresponse['creditResponse']['message'])
@@ -268,7 +279,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         voidresponse = online.request(txn_dict, conf)
         self.assertEquals('000', voidresponse['voidResponse']['response'])
         self.assertEquals('Approved', voidresponse['voidResponse']['message'])
@@ -302,7 +314,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('000', response['authorizationResponse']['response'])
         self.assertEquals('Approved', response['authorizationResponse']['message'])
@@ -339,7 +352,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('000', response['saleResponse']['response'])
         self.assertEquals('Approved', response['saleResponse']['message'])
@@ -362,7 +376,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         creditresponse = online.request(txn_dict, conf)
         self.assertEquals('000', creditresponse['creditResponse']['response'])
         self.assertEquals('Approved', creditresponse['creditResponse']['message'])
@@ -374,7 +389,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         voidresponse = online.request(txn_dict, conf)
         self.assertEquals('000', voidresponse['voidResponse']['response'])
         self.assertEquals('Approved', voidresponse['voidResponse']['message'])
@@ -403,7 +419,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('000', response['authorizationResponse']['response'])
         self.assertEquals('Approved', response['authorizationResponse']['message'])
@@ -418,7 +435,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         captureresponse = online.request(txn_dict, conf)
         self.assertEquals('000', captureresponse['captureResponse']['response'])
         self.assertEquals('Approved', captureresponse['captureResponse']['message'])
@@ -430,7 +448,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         creditresponse = online.request(txn_dict, conf)
         self.assertEquals('000', creditresponse['creditResponse']['response'])
         self.assertEquals('Approved', creditresponse['creditResponse']['message'])
@@ -442,7 +461,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         voidresponse = online.request(txn_dict, conf)
         self.assertEquals('000', voidresponse['voidResponse']['response'])
         self.assertEquals('Approved', voidresponse['voidResponse']['message'])
@@ -471,7 +491,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('000', response['authorizationResponse']['response'])
         self.assertEquals('Approved', response['authorizationResponse']['message'])
@@ -503,7 +524,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('000', response['saleResponse']['response'])
         self.assertEquals('Approved', response['saleResponse']['message'])
@@ -518,7 +540,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         captureresponse = online.request(txn_dict, conf)
         self.assertEquals('000', captureresponse['captureResponse']['response'])
         self.assertEquals('Approved', captureresponse['captureResponse']['message'])
@@ -530,7 +553,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         creditresponse = online.request(txn_dict, conf)
         self.assertEquals('000', creditresponse['creditResponse']['response'])
         self.assertEquals('Approved', creditresponse['creditResponse']['message'])
@@ -542,7 +566,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         voidresponse = online.request(txn_dict, conf)
         self.assertEquals('000', voidresponse['voidResponse']['response'])
         self.assertEquals('Approved', voidresponse['voidResponse']['message'])
@@ -570,7 +595,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('000', response['authorizationResponse']['response'])
         self.assertEquals('Approved', response['authorizationResponse']['message'])
@@ -584,7 +610,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         captureresponse = online.request(txn_dict, conf)
         self.assertEquals('000', captureresponse['captureResponse']['response'])
         self.assertEquals('Approved', captureresponse['captureResponse']['message'])
@@ -596,7 +623,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         creditresponse = online.request(txn_dict, conf)
         self.assertEquals('000', creditresponse['creditResponse']['response'])
         self.assertEquals('Approved', creditresponse['creditResponse']['message'])
@@ -608,7 +636,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         voidresponse = online.request(txn_dict, conf)
         self.assertEquals('000', voidresponse['voidResponse']['response'])
         self.assertEquals('Approved', voidresponse['voidResponse']['message'])
@@ -637,7 +666,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('000', response['authorizationResponse']['response'])
         self.assertEquals('Approved', response['authorizationResponse']['message'])
@@ -668,7 +698,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('000', response['saleResponse']['response'])
         self.assertEquals('Approved', response['saleResponse']['message'])
@@ -682,7 +713,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         captureresponse = online.request(txn_dict, conf)
         self.assertEquals('000', captureresponse['captureResponse']['response'])
         self.assertEquals('Approved', captureresponse['captureResponse']['message'])
@@ -694,7 +726,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         creditresponse = online.request(txn_dict, conf)
         self.assertEquals('000', creditresponse['creditResponse']['response'])
         self.assertEquals('Approved', creditresponse['creditResponse']['message'])
@@ -718,7 +751,8 @@ class TestCertAuthsDict(unittest.TestCase):
 
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('000', response['authorizationResponse']['response'])
         self.assertEquals('Approved', response['authorizationResponse']['message'])
@@ -733,7 +767,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         captureresponse = online.request(txn_dict, conf)
         self.assertEquals('000', captureresponse['captureResponse']['response'])
         self.assertEquals('Approved', captureresponse['captureResponse']['message'])
@@ -745,7 +780,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         creditresponse = online.request(txn_dict, conf)
         self.assertEquals('000', creditresponse['creditResponse']['response'])
         self.assertEquals('Approved', creditresponse['creditResponse']['message'])
@@ -757,7 +793,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         voidresponse = online.request(txn_dict, conf)
         self.assertEquals('000', voidresponse['voidResponse']['response'])
         self.assertEquals('Approved', voidresponse['voidResponse']['message'])
@@ -781,7 +818,8 @@ class TestCertAuthsDict(unittest.TestCase):
 
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('000', response['authorizationResponse']['response'])
         self.assertEquals('Approved', response['authorizationResponse']['message'])
@@ -809,7 +847,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('000', response['saleResponse']['response'])
         self.assertEquals('Approved', response['saleResponse']['message'])
@@ -824,7 +863,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         creditresponse = online.request(txn_dict, conf)
         self.assertEquals('000', creditresponse['creditResponse']['response'])
         self.assertEquals('Approved', creditresponse['creditResponse']['message'])
@@ -836,7 +876,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         voidresponse = online.request(txn_dict, conf)
         self.assertEquals('000', voidresponse['voidResponse']['response'])
         self.assertEquals('Approved', voidresponse['voidResponse']['message'])
@@ -864,7 +905,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 }
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('110', response['authorizationResponse']['response'])
         self.assertEquals('Insufficient Funds', response['authorizationResponse']['message'])
@@ -894,7 +936,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 }
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('110', response['saleResponse']['response'])
         self.assertEquals('Insufficient Funds', response['saleResponse']['message'])
@@ -908,7 +951,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'id': 'ThisIsID'
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         voidresponse = online.request(txn_dict, conf)
         self.assertEquals('000', voidresponse['voidResponse']['response'])
         self.assertEquals('Approved', voidresponse['voidResponse']['message'])
@@ -937,7 +981,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('301', response['authorizationResponse']['response'])
         self.assertEquals('Invalid Account Number', response['authorizationResponse']['message'])
@@ -968,7 +1013,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('301', response['authorizationResponse']['response'])
         self.assertEquals('Invalid Account Number', response['authorizationResponse']['message'])
@@ -999,7 +1045,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('301', response['saleResponse']['response'])
         self.assertEquals('Invalid Account Number', response['saleResponse']['message'])
@@ -1030,7 +1077,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('123', response['authorizationResponse']['response'])
         self.assertEquals('Call Discover', response['authorizationResponse']['message'])
@@ -1061,7 +1109,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('123', response['authorizationResponse']['response'])
         self.assertEquals('Call Discover', response['authorizationResponse']['message'])
@@ -1092,7 +1141,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('123', response['saleResponse']['response'])
         self.assertEquals('Call Discover', response['saleResponse']['message'])
@@ -1123,7 +1173,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('303', response['authorizationResponse']['response'])
         self.assertEquals('Pick Up Card', response['authorizationResponse']['message'])
@@ -1154,7 +1205,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('303', response['authorizationResponse']['response'])
         self.assertEquals('Pick Up Card', response['authorizationResponse']['message'])
@@ -1185,7 +1237,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('303', response['saleResponse']['response'])
         self.assertEquals('Pick Up Card', response['saleResponse']['message'])
@@ -1208,7 +1261,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('010', response['authorizationResponse']['response'])
         self.assertEquals('Partially Approved', response['authorizationResponse']['message'])
@@ -1230,7 +1284,8 @@ class TestCertAuthsDict(unittest.TestCase):
             }
         }
 
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('010', response['authorizationResponse']['response'])
         self.assertEquals('Partially Approved', response['authorizationResponse']['message'])
@@ -1251,7 +1306,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'allowPartialAuth': True,
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('010', response['authorizationResponse']['response'])
         self.assertEquals('Partially Approved', response['authorizationResponse']['message'])
@@ -1272,7 +1328,8 @@ class TestCertAuthsDict(unittest.TestCase):
                 'allowPartialAuth': True,
             }
         }
-        conf.proxy = ''
+        conf.proxy=''
+ 		conf.save()
         response = online.request(txn_dict, conf)
         self.assertEquals('010', response['authorizationResponse']['response'])
         self.assertEquals('Partially Approved', response['authorizationResponse']['message'])

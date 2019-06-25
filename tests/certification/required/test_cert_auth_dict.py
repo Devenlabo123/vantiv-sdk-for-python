@@ -38,7 +38,7 @@ import certification_test_conf
 
 conf = certification_test_conf.conf
 
-conf.proxy=''
+conf.proxy=None
 conf.save()
 
 

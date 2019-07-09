@@ -1,0 +1,154 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<div class ="jumbotron text-center">
+		<h1>Worldpay - Python SDK Web Application</h1>
+	</div>
+	
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="{{url_for('static', filename='scripts.js')}}"></script>
+</head>
+
+
+<body>
+    <form id="form2" method="POST">
+        <h3>Configuration</h3>
+
+        <br>URL:
+        <br>
+        <input type="text" name="url" type="url" >
+        <br>Proxy:
+        <br>
+        <input type="text" name="proxy">
+        <br>User:
+        <br>
+        <input type="text" name="user">
+        <br>Password:
+        <br>
+        <input type="text" name="password">
+        <br>Merchant ID:
+        <br>
+        <input type="text" name="merchant_id">
+        <br>
+
+        <br />
+        <div>
+            <style type="text/css">
+                td {
+                    vertical-align: top;
+                }
+            </style>
+            <table width="70%">
+                <tr>
+                    <td width="35%">
+
+                        <h3>Simple Auth <input type="checkbox" id="auth_checkbox" name="auth_checkbox"/></h3>
+                        
+                        Report Group:
+                        <br>
+                        <input type="text" name="auth_report_group">
+                        <br>Order ID:
+                        <br>
+                        <input type="text" name="order_id">
+                        <br>Amount:
+                        <br>
+                        <input type="number" name="auth_amount" >
+                        <br>Order Source
+                        <br>
+                        <input type="text" name="auth_order_source">
+                        <br>ID:
+                        <br>
+                        <input type="number" name="auth_id">
+                        <br>Card Number
+                        <br>
+                        <input type="number" name="card_number">
+                        <br>Expiration Date
+                        <br>
+                        <input type="number" name="exp_date">
+                        <br>Card Type
+                        <br>
+                        <input type="text" name="card_type">
+                        <br />
+                    </td>
+                    <td width="35%">
+                        <h3>Simple Capture <input type="checkbox" id="capture_checkbox" name="capture_checkbox"/></h3> Report Group:
+                        <br>
+                        <input type="text" name="capture_report_group">
+                        <br>CNP Txn ID:
+                        <br>
+                        <input type="number" name="cnp_txn_id">
+                        <br>Amount:
+                        <br>
+                        <input type="number" name="capture_amount">
+                        <br>Paypal Notes:
+                        <br>
+                        <input type="text" name="paypal_notes">
+                        <br>Order Source
+                        <br>
+                        <input type="text" name="capture_order_source">
+                        <br>Pin:
+                        <br>
+                        <input type="number" name="pin">
+                        <br>ID:
+                        <br>
+                        <input type="number" name="capture_id">
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Auth Response</h3>
+
+                    </td>
+                    <td>
+                        <h3>Capture Response</h3>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <input type="Submit" id="submittwo" name="submittwo">
+
+    </form>
+
+</body>
+<style> 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    height: 29px;
+    width: 188px;
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+    height: 29px;
+    width: 188px;
+}
+
+</style>
+</html>
+
+
+{% if capture %}
+  <h2>Capture Response</h2>
+  {{capture}}
+{% endif %}
+
+<br>
+<br>
+<br>
+<br>
+
+{% if auth %}
+  <h2>Auth Response</h2>
+  {{auth}}
+{% endif %}
+
+{% endblock %}
